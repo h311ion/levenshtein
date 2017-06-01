@@ -26,6 +26,10 @@ class CalculateLevenshteinCommand extends Command
 
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
+		if (extension_loaded('xdebug')) {
+			$output->writeln("<comment>Please disable xdebug to improve script performance</comment>");
+		}
+
 		$inputFilename = $input->getArgument('input_filename');
 
 		if (!is_file($inputFilename) || !is_readable($inputFilename)) {

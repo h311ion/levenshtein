@@ -1,8 +1,8 @@
 # levenshtein
 Simple calculation project
 
-## Current time resultsk 
-On pretty low-end MacBook Air with i5-2557M CPU @ 1.70GHz and 4Gb onboard memory, MacOs Sierra 10.12, PHP 7.0:
+## Current time results
+On pretty low-end MacBook Air with i5-2557M CPU @ 1.70GHz and 4Gb on-board memory, MacOs Sierra 10.12, PHP 7.0:
 ```
 time php breathalyzer.php 187
 187
@@ -27,7 +27,7 @@ I'm using standard PHP array as main storage. where keys are vocabulary words an
 
 ## Some additional notes
 - Why levenshtein? Because it very closely matches the desired specifications, fast and shipped with default PHP library
-- Do it have any limitations? Yes, word length limited to 255 symbols, non multibyte - built-in PHP limitations. On test dataset i didn't expirenced any memory problems, but it can affect script on larger sized vocabularies 
+- Do it have any limitations? Yes, word length limited to 255 symbols, non multibyte - built-in PHP limitations. On test dataset i didn't experienced any memory problems, but it can affect script on larger sized vocabularies 
 - Why Symfony console component? I have tried to write naive single-script solution, but it became messy, so it's anyway needed to be splitted into subclasses and symfony offers nice gain to effort ratio, so i decided to choose it
 - Why do i not use PHP7 specific instructions? Because i didn't need them and script will run on all modern PHP versions
 - Why do i committed vendor folder? Because i want to ship ready-to-use archive, without additional unnecessary preparations
